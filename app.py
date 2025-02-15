@@ -11,5 +11,10 @@ def home():
 def view():
     return "Hey this just test version to find the process"
 
+
+@app.route("/home",methods=['GET'])
+def home():
+    return "Home page with html tags"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
