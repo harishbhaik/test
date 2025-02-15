@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,request,render_template
 
 app = Flask(__name__)
 
@@ -13,8 +13,8 @@ def view():
 
 
 @app.route("/home",methods=['GET'])
-def home():
-    return "Home page with html tags"
+def about():
+    return render_template("home.html")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
