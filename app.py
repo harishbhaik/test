@@ -16,5 +16,10 @@ def view():
 def about():
     return render_template("home.html")
 
+@app.route("/main",methods=['GET'])
+
+def main():
+    return "new branch"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
