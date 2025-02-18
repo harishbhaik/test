@@ -24,7 +24,7 @@ def main():
 
 @app.route("/about",methods=['GET'])
 
-def about():
+def about_new():
     return "new app route"
 
 if __name__ == "__main__":
